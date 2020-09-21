@@ -5,9 +5,10 @@ import java.util.Arrays;
 public class Pizzeria {
 
     public static void main(String[] args) {
-        Pizza meat = new Pizza(30, "Мясо, сыр, помидор", "Мясная", 101);
-        Pizza chicken = new Pizza(40, "Курица, грибы, огурец", "Куриная", 120);
-        Pizza vegetable = new Pizza(20, "Ананас, огурец, помидор, грибы", "Овощная", 88);
+        Circle basis = new Circle (30);
+        Pizza meat = new Pizza(basis, "Мясо, сыр, помидор", "Мясная", 101);
+        Pizza chicken = new Pizza(basis, "Курица, грибы, огурец", "Куриная", 120);
+        Pizza vegetable = new Pizza(basis, "Ананас, огурец, помидор, грибы", "Овощная", 88);
         Pizza[] pizza = {meat, chicken, vegetable};
         for (Pizza p : pizza);
 

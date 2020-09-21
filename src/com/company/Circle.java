@@ -5,10 +5,22 @@ public class Circle {
     public double area;
     public String color;
     public double length;
+    public int basis;
 
     public Circle(int radius) {
         this.radius = radius;
+    }
 
+    @Override
+    public String toString() {
+        return
+                "" +
+                 + radius +
+//                ", area=" + area +
+//                ", color='" + color + '\'' +
+//                ", length=" + length +
+//                ", basis=" + basis +
+                "";
     }
 
     public Circle(int radius, String color) {
@@ -16,6 +28,7 @@ public class Circle {
         this.color = color;
         this.area = Math.pow(radius,2) * Math.PI;
         this.length = 2 * Math.PI * radius;
+
         /**
          * @autor: Довженко Денис
          * В классе Circle описывется Окружность, а именно площадь и длина окружности, а также ее поля.
@@ -23,7 +36,7 @@ public class Circle {
          */
     }
 }
-
+//
 //        1 Создание клaсса с конструктором
 //        1.1 Создать класс Circle. Описать поля: радиус длинна окружности, площадь, цвет.
 //        Создать 2 конструктора, в которые передавать параметры: радиус, и цвет и радиус.
