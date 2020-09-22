@@ -15,13 +15,11 @@ public class Pizza {
     }
 
 
-    public Pizza(Circle basis, String composition, String name, int cost) {
-        this.basis = basis;
+    public Pizza(double radius, String composition, String name, int cost) {
+        this.basis = new Circle(radius*2);
         this.composition = composition;
         this.name = name;
         this.cost = cost;
-
-        Circle diameter = new Circle(4);
     }
 
     /**

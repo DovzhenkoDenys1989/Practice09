@@ -1,13 +1,13 @@
 package com.company;
 
 public class Circle {
-    public int radius;
+    public double radius;
     public double area;
     public String color;
     public double length;
     public int basis;
 
-    public Circle(int radius) {
+    public Circle(double radius) {
         this.radius = radius;
     }
 
